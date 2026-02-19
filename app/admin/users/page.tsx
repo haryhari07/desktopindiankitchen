@@ -79,9 +79,10 @@ export default function UsersPage() {
       }
 
       setUsers(users.filter(u => u.id !== userId));
-    } catch (err: any) {
+    } catch (err: unknown) {
       console.error(err);
-      alert(err.message || 'Failed to delete user');
+      const message = err instanceof Error ? err.message : 'Failed to delete user';
+      alert(message);
     }
   };
 

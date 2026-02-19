@@ -18,7 +18,7 @@ async function getUser() {
   const cookieStore = await cookies();
   const sessionId = cookieStore.get('session_id')?.value;
   if (sessionId) {
-    const dbSession = db.getSession(sessionId);
+    const dbSession = await db.getSession(sessionId);
     if (dbSession) {
       return db.findUserById(dbSession.userId);
     }
@@ -43,11 +43,10 @@ export async function DELETE(request: Request, { params }: Props) {
       return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
     }
 
-    // Get recipe before deleting to get image URL
-    const recipe = db.getRecipe(slug);
+    const recipe = await db.getRecipe(slug);
     const imageUrl = recipe?.imageUrl;
 
-    const deleted = db.deleteRecipe(slug);
+    const deleted = await db.deleteRecipe(slug);
     if (deleted) {
       // If recipe deleted successfully, try to delete image
       if (imageUrl && imageUrl.startsWith('/recipes/')) {
@@ -89,7 +88,7 @@ export async function PUT(request: Request, { params }: Props) {
     }
 
     const body = await request.json();
-    const updatedRecipe = db.updateRecipe(slug, body);
+    const updatedRecipe = await db.updateRecipe(slug, body);
 
     if (updatedRecipe) {
       return NextResponse.json({ recipe: updatedRecipe });

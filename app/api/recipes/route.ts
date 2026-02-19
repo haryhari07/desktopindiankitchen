@@ -18,7 +18,7 @@ async function getUser() {
   const cookieStore = await cookies();
   const sessionId = cookieStore.get('session_id')?.value;
   if (sessionId) {
-    const dbSession = db.getSession(sessionId);
+    const dbSession = await db.getSession(sessionId);
     if (dbSession) {
       return db.findUserById(dbSession.userId);
     }
@@ -27,7 +27,7 @@ async function getUser() {
 }
 
 export async function GET() {
-  const recipes = db.getRecipes();
+  const recipes = await db.getRecipes();
   return NextResponse.json({ recipes });
 }
 
@@ -100,10 +100,11 @@ export async function POST(request: Request) {
     }
 
     try {
-      const newRecipe = db.createRecipe(body);
+      const newRecipe = await db.createRecipe(body);
       return NextResponse.json({ recipe: newRecipe }, { status: 201 });
-    } catch (e: any) {
-      return NextResponse.json({ error: e.message || 'Failed to create recipe' }, { status: 400 });
+    } catch (e: unknown) {
+      const message = e instanceof Error ? e.message : 'Failed to create recipe';
+      return NextResponse.json({ error: message }, { status: 400 });
     }
 
   } catch (error) {

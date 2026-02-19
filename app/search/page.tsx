@@ -14,7 +14,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
   const { q: rawQ } = await searchParams;
   const q = (rawQ || '').trim().toLowerCase();
   
-  const allRecipes = db.getRecipes();
+  const allRecipes = await db.getRecipes();
 
   const recipeMatches = q
     ? allRecipes.filter(

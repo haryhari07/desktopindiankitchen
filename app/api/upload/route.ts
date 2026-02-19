@@ -18,7 +18,7 @@ async function getUser() {
   const cookieStore = await cookies();
   const sessionId = cookieStore.get('session_id')?.value;
   if (sessionId) {
-    const dbSession = db.getSession(sessionId);
+    const dbSession = await db.getSession(sessionId);
     if (dbSession) {
       return db.findUserById(dbSession.userId);
     }

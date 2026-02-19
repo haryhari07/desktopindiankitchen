@@ -74,8 +74,9 @@ export default function SignInPage() {
         await signup(email, password, name);
       }
       router.push('/');
-    } catch (err: any) {
-      setError(err.message || 'An error occurred. Please try again.');
+    } catch (err: unknown) {
+      const message = err instanceof Error ? err.message : 'An error occurred. Please try again.';
+      setError(message);
     }
   };
 
@@ -184,9 +185,12 @@ export default function SignInPage() {
                     Password
                   </label>
                   {isLogin && (
-                    <button type="button" className="text-xs text-[var(--ak-primary)] hover:underline">
+                    <Link
+                      href="/forgot-password"
+                      className="text-xs text-[var(--ak-primary)] hover:underline"
+                    >
                       Forgot password?
-                    </button>
+                    </Link>
                   )}
                 </div>
                 <input

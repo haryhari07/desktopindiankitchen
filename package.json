@@ -5,15 +5,20 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:hostinger": "node scripts/build-hostinger.js",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint . --ext .ts,.tsx --ignore-pattern scripts/*.js"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",
+    "@heyputer/puter.js": "^2.2.8",
+    "@neondatabase/serverless": "^1.0.2",
+    "@vercel/postgres": "^0.10.0",
     "framer-motion": "^12.31.0",
     "lucide-react": "^0.563.0",
     "next": "16.1.5",
     "next-auth": "^4.24.13",
+    "pg": "^8.13.0",
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "sharp": "^0.34.5"

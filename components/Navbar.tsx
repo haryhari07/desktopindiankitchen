@@ -1,36 +1,64 @@
 'use client';
 import Link from 'next/link';
 import Image from 'next/image';
-import { useMemo, useRef, useState, useEffect } from 'react';
+import { useRef, useState, useEffect } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
-import { recipes, states } from '@/data/recipes';
+import { Recipe, State } from '@/data/types';
 import { useAuth } from '@/context/AuthContext';
+
+type NavItemProps = { href: string; children: React.ReactNode };
+
+function NavItem({ href, children }: NavItemProps) {
+  const pathname = usePathname();
+  const isActive = pathname === href || (href !== '/' && pathname?.startsWith(href) && href !== '/search');
+
+  return (
+    <Link
+      href={href}
+      className={`relative px-1 py-2 text-sm font-medium transition-colors duration-200 group ${
+        isActive ? 'text-[var(--ak-primary)]' : 'text-gray-700 hover:text-[var(--ak-primary)]'
+      }`}
+    >
+      {children}
+      <span
+        className={`absolute bottom-0 left-0 h-0.5 bg-[var(--ak-primary)] transition-all duration-300 rounded-full ${
+          isActive ? 'w-full' : 'w-0 group-hover:w-full'
+        }`}
+      />
+    </Link>
+  );
+}
 
 export default function Navbar() {
   const router = useRouter();
-  const pathname = usePathname();
   const { user, logout } = useAuth();
   const [query, setQuery] = useState('');
   const [open, setOpen] = useState(false);
   const [userMenuOpen, setUserMenuOpen] = useState(false);
   const inputRef = useRef<HTMLInputElement | null>(null);
   const userMenuRef = useRef<HTMLDivElement>(null);
+  const [results, setResults] = useState<{ recipeMatches: Recipe[], stateMatches: State[] }>({ recipeMatches: [], stateMatches: [] });
 
-  const results = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    if (!q) return { recipeMatches: [], stateMatches: [] };
-    const recipeMatches = recipes.filter(
-      r =>
-        r.title.toLowerCase().includes(q) ||
-        r.description.toLowerCase().includes(q) ||
-        r.state.toLowerCase().includes(q)
-    ).slice(0, 5);
-    const stateMatches = states.filter(
-      s =>
-        s.name.toLowerCase().includes(q) ||
-        s.region.toLowerCase().includes(q)
-    ).slice(0, 5);
-    return { recipeMatches, stateMatches };
+  useEffect(() => {
+    const timer = setTimeout(async () => {
+      const q = query.trim();
+      if (!q) {
+        setResults({ recipeMatches: [], stateMatches: [] });
+        return;
+      }
+
+      try {
+        const res = await fetch(`/api/search?q=${encodeURIComponent(q)}`);
+        if (res.ok) {
+          const data = await res.json();
+          setResults(data);
+        }
+      } catch (error) {
+        console.error('Search failed', error);
+      }
+    }, 300);
+
+    return () => clearTimeout(timer);
   }, [query]);
 
   useEffect(() => {
@@ -60,24 +88,6 @@ export default function Navbar() {
     if (!q) return;
     setOpen(false);
     router.push(`/search?q=${encodeURIComponent(q)}`);
-  };
-
-  const NavItem = ({ href, children }: { href: string; children: React.ReactNode }) => {
-    const isActive = pathname === href || (href !== '/' && pathname?.startsWith(href) && href !== '/search');
-    
-    return (
-      <Link 
-        href={href} 
-        className={`relative px-1 py-2 text-sm font-medium transition-colors duration-200 group ${
-          isActive ? 'text-[var(--ak-primary)]' : 'text-gray-700 hover:text-[var(--ak-primary)]'
-        }`}
-      >
-        {children}
-        <span className={`absolute bottom-0 left-0 h-0.5 bg-[var(--ak-primary)] transition-all duration-300 rounded-full ${
-          isActive ? 'w-full' : 'w-0 group-hover:w-full'
-        }`} />
-      </Link>
-    );
   };
 
   const userInitials = user?.name 
@@ -171,7 +181,7 @@ export default function Navbar() {
                 )}
                 {results.recipeMatches.length === 0 && results.stateMatches.length === 0 && (
                   <div className="px-3 py-8 text-center">
-                    <p className="text-sm text-gray-500">No matches found for "{query}"</p>
+                    <p className="text-sm text-gray-500">No matches found for “{query}”</p>
                     <p className="text-xs text-gray-400 mt-1">Try searching for ingredients or states</p>
                   </div>
                 )}
