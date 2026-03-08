@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/haryh/Desktop/vercel/indian-kitchen/app/genie/loading.tsx"],"sourcesContent":["export default function Loading() {\n  return (\n    <div className=\"min-h-screen bg-[var(--ak-bg)] flex items-center justify-center\">\n      <div className=\"flex flex-col items-center gap-4\">\n        <div className=\"w-16 h-16 border-4 border-[var(--ak-primary)] border-t-transparent rounded-full animate-spin\" />\n        <p className=\"text-gray-600 font-medium animate-pulse\">Summoning the Genie...</p>\n      </div>\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;;AAAe,SAAS;IACtB,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAI,WAAU;;;;;;8BACf,8OAAC;oBAAE,WAAU;8BAA0C;;;;;;;;;;;;;;;;;AAI/D"}}]
+}

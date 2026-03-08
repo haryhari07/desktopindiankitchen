@@ -1,0 +1,418 @@
+🔑 Got authentication token
+
+🔍 Fetching deployment info for: dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT
+   Resolving teams...
+   Trying dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT in personal account...
+✅ Got deployment info
+
+📦 Deployment ID:  dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT
+🌐 Deployment URL: desktopindiankitchen-htkg9rzkr-haryhari07s-projects.vercel.app
+📁 Project:        desktopindiankitchen
+
+📋 Fetching file tree from API...
+
+✅ Got file tree (21 top-level entries)
+
+📁 Output directory: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source
+
+🗑️  Clearing previous download...
+
+⬇️  Downloading files...
+   (Use --verbose to see detailed progress)
+
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\[state]\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\about\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\admin\comments\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\admin\recipes\new\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\admin\recipes\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\admin\users\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\admin\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\admin\comments\[id]\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\admin\comments\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\admin\users\[id]\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\admin\users\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\[...nextauth]\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\forgot-password\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\google-sync\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\login\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\logout\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\me\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\reset-password\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\signup\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\genie\saved\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\genie\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\recipe\[slug]\bookmark\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\recipe\[slug]\comments\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\recipe\[slug]\rate\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\recipes\[slug]\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\recipes\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\search\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\upload\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\user\bookmarks\route.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\contact\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\forgot-password\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\genie\GenieClient.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\genie\loading.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\genie\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\privacy-policy\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\recipe\[slug]\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\recipes\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\reset-password\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\saved\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\search\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\signin\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\terms\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\globals.css
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\icon.svg
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\icon.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\layout.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\page.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\robots.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\sitemap.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\BookmarkButton.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\CommentSection.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\Footer.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\MealPlateCard.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\Navbar.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\NextAuthProvider.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\Rating.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\RecipeActions.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\RecipeCard.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\RecipeRatingWrapper.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\RecipesList.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\SimilarRecipes.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\StateCard.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\context\AuthContext.tsx
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\data\db.json
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\data\recipes.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\data\types.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\lib\auth.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\lib\db.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\assets\README.txt
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\assets\hero-dal.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\assets\hero-dal1.jpg
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\assets\hero-sweets.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\assets\hero-sweets1.jpg
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\meals\diabetic-friendly-plate.png
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\meals\diabetic-friendly-plate1.jpg
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\meals\north-indian-comfort-meal.png
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\meals\south-indian-wholesome-feast.png
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\README.txt
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\amritsari-kulcha.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\appam-stew.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\bai.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\bajra-khichdi.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\bisi-bele-bath.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\butter-chicken.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\chicken-chettinad.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\chole-bhature.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\coconut-prawn-curry.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\crab-curry.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dal-baati-churma.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dalma.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dham.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dhokla.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dhuska.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dubki-kadhi.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\eromba.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\fara.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\flat-lay-pakistani-food-arrangement.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\galouti-kebab.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\goan-fish-curry.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\hyderabadi-biryani.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\jadoh.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\kafuli.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\litti-chokha.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\makki-ki-roti.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\masala-dosa.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\masor-tenga.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\momos.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\mui-borok.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\mus-kavaab.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\palak-paneer.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\pav-bhaji.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\poha-jalebi.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\pondicherry-fish-curry.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\rogan-josh.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\rosogolla.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\samosa.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\sarson-ka-saag.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\sarva-pindi.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\skyu.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\smoked-pork-bamboo.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\thukpa.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\traditional-idli.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\vada-pav.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\andaman-nicobar.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\andhra-pradesh.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\arunachal-pradesh.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\assam.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\bihar.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\chandigarh.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\chhattisgarh.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\dadra-nagar-haveli-daman-diu.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\delhi.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\goa.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\gujarat.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\haryana.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\himachal-pradesh.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\jammu-and-kashmir.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\jharkhand.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\karnataka.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\kerala.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\ladakh.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\lakshadweep.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\madhya-pradesh.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\maharashtra.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\manipur.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\meghalaya.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\mizoram.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\nagaland.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\odisha.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\puducherry.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\punjab.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\rajasthan.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\sikkim.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\tamil-nadu.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\telangana.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\tripura.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\uttar-pradesh.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\uttarakhand.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\west-bengal.webp
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\file.svg
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\globe.svg
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\indian-kitchen-logo.svg
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\next.svg
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\vercel.svg
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\window.svg
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\scripts\add_ratings.js
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\scripts\build-hostinger.js
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\scripts\download_images.mjs
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\scripts\optimize_public_recipes.mjs
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\scripts\update_recipes.mjs
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\.env
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\DEPLOY_HOSTINGER.md
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\README.md
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\eslint.config.mjs
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\middleware.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\next-env.d.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\next.config.ts
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\package-lock.json
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\package.json
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\postcss.config.mjs
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\requirements.txt
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\tsconfig.json
+✅ Downloaded: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\tsconfig.tsbuildinfo
+
+🎉 All files processed successfully!
+
+📊 Running comparison...
+
+📁 Total files: 183
+   ✅ Downloaded: 183
+   ⏭️  Skipped: 0
+   ❌ Failed: 0
+💾 Total size: 37.53 MB
+
+📈 File types breakdown:
+   webp              83 files
+   tsx               37 files
+   ts                31 files
+   svg                7 files
+   mjs                5 files
+   json               4 files
+   txt                3 files
+   jpg                3 files
+   png                3 files
+   js                 2 files
+
+🌳 File structure tree:
+
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\.env
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\[state]\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\about\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\admin\comments\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\admin\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\admin\recipes\new\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\admin\recipes\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\admin\users\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\admin\comments\[id]\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\admin\comments\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\admin\users\[id]\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\admin\users\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\[...nextauth]\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\forgot-password\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\google-sync\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\login\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\logout\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\me\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\reset-password\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\auth\signup\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\genie\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\genie\saved\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\recipe\[slug]\bookmark\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\recipe\[slug]\comments\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\recipe\[slug]\rate\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\recipes\[slug]\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\recipes\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\search\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\upload\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\api\user\bookmarks\route.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\contact\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\forgot-password\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\genie\GenieClient.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\genie\loading.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\genie\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\globals.css
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\icon.svg
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\icon.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\layout.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\privacy-policy\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\recipe\[slug]\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\recipes\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\reset-password\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\robots.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\saved\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\search\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\signin\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\sitemap.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\app\terms\page.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\BookmarkButton.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\CommentSection.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\Footer.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\MealPlateCard.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\Navbar.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\NextAuthProvider.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\Rating.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\RecipeActions.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\RecipeCard.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\RecipeRatingWrapper.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\RecipesList.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\SimilarRecipes.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\components\StateCard.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\context\AuthContext.tsx
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\data\db.json
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\data\recipes.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\data\types.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\DEPLOY_HOSTINGER.md
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\eslint.config.mjs
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\lib\auth.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\lib\db.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\middleware.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\next-env.d.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\next.config.ts
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\package-lock.json
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\package.json
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\postcss.config.mjs
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\assets\hero-dal.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\assets\hero-dal1.jpg
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\assets\hero-sweets.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\assets\hero-sweets1.jpg
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\assets\README.txt
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\file.svg
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\globe.svg
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\indian-kitchen-logo.svg
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\meals\diabetic-friendly-plate.png
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\meals\diabetic-friendly-plate1.jpg
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\meals\north-indian-comfort-meal.png
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\meals\south-indian-wholesome-feast.png
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\next.svg
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\amritsari-kulcha.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\appam-stew.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\bai.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\bajra-khichdi.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\bisi-bele-bath.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\butter-chicken.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\chicken-chettinad.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\chole-bhature.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\coconut-prawn-curry.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\crab-curry.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dal-baati-churma.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dalma.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dham.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dhokla.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dhuska.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\dubki-kadhi.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\eromba.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\fara.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\flat-lay-pakistani-food-arrangement.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\galouti-kebab.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\goan-fish-curry.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\hyderabadi-biryani.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\jadoh.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\kafuli.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\litti-chokha.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\makki-ki-roti.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\masala-dosa.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\masor-tenga.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\momos.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\mui-borok.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\mus-kavaab.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\palak-paneer.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\pav-bhaji.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\poha-jalebi.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\pondicherry-fish-curry.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\README.txt
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\rogan-josh.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\rosogolla.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\samosa.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\sarson-ka-saag.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\sarva-pindi.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\skyu.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\smoked-pork-bamboo.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\thukpa.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\traditional-idli.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\recipes\vada-pav.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\andaman-nicobar.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\andhra-pradesh.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\arunachal-pradesh.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\assam.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\bihar.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\chandigarh.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\chhattisgarh.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\dadra-nagar-haveli-daman-diu.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\delhi.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\goa.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\gujarat.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\haryana.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\himachal-pradesh.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\jammu-and-kashmir.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\jharkhand.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\karnataka.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\kerala.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\ladakh.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\lakshadweep.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\madhya-pradesh.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\maharashtra.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\manipur.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\meghalaya.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\mizoram.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\nagaland.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\odisha.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\puducherry.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\punjab.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\rajasthan.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\sikkim.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\tamil-nadu.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\telangana.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\tripura.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\uttar-pradesh.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\uttarakhand.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\states\west-bengal.webp
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\vercel.svg
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\public\window.svg
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\README.md
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\requirements.txt
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\scripts\add_ratings.js
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\scripts\build-hostinger.js
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\scripts\download_images.mjs
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\scripts\optimize_public_recipes.mjs
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\scripts\update_recipes.mjs
+├── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\tsconfig.json
+└── 📄 C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\source\tsconfig.tsbuildinfo
+
+✨ Download and verification complete!
+📄 Full log saved to: C:\Users\haryh\Desktop\vercel\indian-kitchen\out\dpl_3FYNmSymM41bbYzJ25PFM4K9mGCT\download-log.txt
+   (Use --verbose to see file tree and skipped files)
+

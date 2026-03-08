@@ -7,7 +7,7 @@ export const states: State[] = [
     slug: 'punjab',
     region: 'North India',
     description: 'Known for its rich, buttery flavors and extensive use of dairy and wheat.',
-    imageUrl: '/states/punjab.jpg',
+    imageUrl: '/states/punjab.webp',
   },
   {
     name: 'Jammu and Kashmir',
@@ -63,14 +63,14 @@ export const states: State[] = [
     slug: 'chandigarh',
     region: 'North India',
     description: 'A fusion of Punjabi and Haryanvi flavors, loving both parathas and lassi.',
-    imageUrl: '/states/chandigarh.jpg',
+    imageUrl: '/states/chandigarh.webp',
   },
   {
     name: 'Ladakh',
     slug: 'ladakh',
     region: 'North India',
     description: 'Tibetan-influenced cuisine with Thukpa, Momos, and butter tea.',
-    imageUrl: '/states/ladakh.jpg',
+    imageUrl: '/states/ladakh.webp',
   },
 
   // South India
@@ -79,14 +79,14 @@ export const states: State[] = [
     slug: 'tamil-nadu',
     region: 'South India',
     description: 'Famous for its fermented rice and lentil dishes, tangy tamarind, and coconut.',
-    imageUrl: '/states/tamil-nadu.jpg',
+    imageUrl: '/states/tamil-nadu.webp',
   },
   {
     name: 'Kerala',
     slug: 'kerala',
     region: 'South India',
     description: 'God\'s Own Country offers distinct coconut-based seafood and Sadhya feasts.',
-    imageUrl: '/states/kerala.jpg',
+    imageUrl: '/states/kerala.webp',
   },
   {
     name: 'Karnataka',
@@ -100,7 +100,7 @@ export const states: State[] = [
     slug: 'andhra-pradesh',
     region: 'South India',
     description: 'Known for the spiciest curries, Gongura pickles, and rich Hyderabadi influence.',
-    imageUrl: '/states/andhra-pradesh.jpg',
+    imageUrl: '/states/andhra-pradesh.webp',
   },
   {
     name: 'Telangana',
@@ -121,14 +121,14 @@ export const states: State[] = [
     slug: 'lakshadweep',
     region: 'South India',
     description: 'Island cuisine heavily reliant on coconut, tuna, and rice.',
-    imageUrl: '/states/lakshadweep.jpg',
+    imageUrl: '/states/lakshadweep.webp',
   },
   {
     name: 'Andaman and Nicobar Islands',
     slug: 'andaman-nicobar',
     region: 'South India',
     description: 'Fresh seafood delights with influences from Bengali and South Indian settlers.',
-    imageUrl: '/states/andaman-nicobar.jpg',
+    imageUrl: '/states/andaman-nicobar.webp',
   },
 
   // West India
@@ -151,14 +151,14 @@ export const states: State[] = [
     slug: 'goa',
     region: 'West India',
     description: 'Portuguese-influenced cuisine famous for Vindaloo, Xacuti, and seafood.',
-    imageUrl: '/states/goa.jpg',
+    imageUrl: '/states/goa.webp',
   },
   {
     name: 'Dadra and Nagar Haveli and Daman and Diu',
     slug: 'dadra-nagar-haveli-daman-diu',
     region: 'West India',
     description: 'Coastal Gujarati cuisine with Portuguese hints and plenty of seafood.',
-    imageUrl: '/states/dadra-nagar-haveli-daman-diu.jpg',
+    imageUrl: '/states/dadra-nagar-haveli-daman-diu.webp',
   },
 
   // East India
@@ -220,7 +220,7 @@ export const states: State[] = [
     slug: 'sikkim',
     region: 'North East India',
     description: 'Organic state famous for Momos, Thukpa, and fermented foods like Gundruk.',
-    imageUrl: '/states/sikkim.jpg',
+    imageUrl: '/states/sikkim.webp',
   },
   {
     name: 'Nagaland',
@@ -300,7 +300,7 @@ export const mealPlates: MealPlate[] = [
     title: 'Diabetic Friendly Plate',
     slug: 'diabetic-friendly-plate',
     description: 'Nutritious and low-glycemic index meal for health-conscious eating.',
-    imageUrl: '/meals/diabetic-friendly-plate.jpg',
+    imageUrl: '/meals/diabetic-friendly-plate.png',
     items: ['Amla Methi Sabzi', 'Bajra Roti', 'Mixed Salad', 'Spiced Buttermilk'],
     nutrition: {
       calories: '450 kcal',
@@ -613,14 +613,14 @@ export const recipes: Recipe[] = [
   // RAJASTHAN
   {
     id: 'rj1',
-    title: 'Dal Baati Churma',
-    slug: 'dal-baati-churma',
+    title: 'Authentic Dal Baati Churma: Why Your Baatis are Hard',
+    slug: 'authentic-dal-baati-churma-secret',
     state: 'Rajasthan',
     region: 'North India',
     prepTime: '45 mins',
     cookTime: '1 hour',
     servings: 4,
-    description: 'Hard wheat rolls served with lentils and sweetened crumbled wheat.',
+    description: 'The secret to soft, flaky Baatis revealed. This traditional Rajasthani trio is the ultimate royal feast!',
     ingredients: [
       { item: 'Wheat Flour (Atta)', quantity: '2 cups (coarse)' },
       { item: 'Semolina (Sooji)', quantity: '1/2 cup' },
@@ -1454,8 +1454,8 @@ export const recipes: Recipe[] = [
   // LADAKH
   {
     id: 'ld1',
-    title: 'Skyu',
-    slug: 'skyu',
+    title: 'Skyu: Traditional Ladakhi Pasta Stew',
+    slug: 'ladakhi-skyu-recipe',
     state: 'Ladakh',
     region: 'North India',
     prepTime: '30 mins',
@@ -1477,7 +1477,7 @@ export const recipes: Recipe[] = [
       'Simmer until the veggies and pasta-like shells are cooked.',
       'Serve hot as a comforting meal.',
     ],
-    imageUrl: '/recipes/skyu.jpg',
+    imageUrl: '/recipes/skyu.png',
     rating: 5,
     reviewCount: 10,
     dietary: ['Vegetarian'],
