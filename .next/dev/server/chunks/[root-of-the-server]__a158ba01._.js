@@ -878,14 +878,14 @@ const recipes = [
     // RAJASTHAN
     {
         id: 'rj1',
-        title: 'Dal Baati Churma',
-        slug: 'dal-baati-churma',
+        title: 'Authentic Dal Baati Churma: Why Your Baatis are Hard',
+        slug: 'authentic-dal-baati-churma-secret',
         state: 'Rajasthan',
         region: 'North India',
         prepTime: '45 mins',
         cookTime: '1 hour',
         servings: 4,
-        description: 'Hard wheat rolls served with lentils and sweetened crumbled wheat.',
+        description: 'The secret to soft, flaky Baatis revealed. This traditional Rajasthani trio is the ultimate royal feast!',
         ingredients: [
             {
                 item: 'Wheat Flour (Atta)',
@@ -2243,8 +2243,8 @@ const recipes = [
     // LADAKH
     {
         id: 'ld1',
-        title: 'Skyu',
-        slug: 'skyu',
+        title: 'Skyu: Traditional Ladakhi Pasta Stew',
+        slug: 'ladakhi-skyu-recipe',
         state: 'Ladakh',
         region: 'North India',
         prepTime: '30 mins',

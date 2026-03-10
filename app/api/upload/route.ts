@@ -116,12 +116,13 @@ export async function POST(request: Request) {
         });
         console.log('SUCCESS: Image uploaded to Vercel Blob:', blob.url);
         return NextResponse.json({ url: blob.url });
-      } catch (blobError: any) {
+      } catch (blobError: unknown) {
         console.error('ERROR: Vercel Blob upload failed:', blobError);
+        const blobErrorMessage = blobError instanceof Error ? blobError.message : String(blobError);
         
         // If the error is about Private vs Public access, we try without the access flag 
         // to use the store's default setting.
-        if (blobError?.message?.includes('private store')) {
+        if (blobErrorMessage.includes('private store')) {
           try {
             console.log('Retrying upload with default store access...');
             const blob = await put(`temp-uploads/${finalFilename}`, optimizedBuffer, {
@@ -138,7 +139,7 @@ export async function POST(request: Request) {
         if (isVercel) {
           return NextResponse.json({ 
             error: 'Vercel Blob upload failed.',
-            details: blobError instanceof Error ? blobError.message : String(blobError)
+            details: blobErrorMessage
           }, { status: 500 });
         }
       }

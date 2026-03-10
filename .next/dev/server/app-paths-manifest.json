@@ -1,1 +1,15 @@
-{}
+{
+  "/admin/page": "app/admin/page.js",
+  "/admin/recipes/edit/[slug]/page": "app/admin/recipes/edit/[slug]/page.js",
+  "/admin/recipes/new/page": "app/admin/recipes/new/page.js",
+  "/admin/recipes/page": "app/admin/recipes/page.js",
+  "/api/admin/users/route": "app/api/admin/users/route.js",
+  "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/recipe/[slug]/bookmark/route": "app/api/recipe/[slug]/bookmark/route.js",
+  "/api/recipes/[slug]/route": "app/api/recipes/[slug]/route.js",
+  "/api/recipes/route": "app/api/recipes/route.js",
+  "/api/upload/route": "app/api/upload/route.js",
+  "/page": "app/page.js",
+  "/signin/page": "app/signin/page.js"
+}

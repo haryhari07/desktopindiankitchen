@@ -7,7 +7,7 @@
     "build": "next build",
     "build:hostinger": "node scripts/build-hostinger.js",
     "start": "next start",
-    "lint": "eslint . --ext .ts,.tsx --ignore-pattern scripts/*.js"
+    "lint": "eslint . --ext .ts,.tsx --ignore-pattern scripts/*.js --ignore-pattern old/** --ignore-pattern out/**"
   },
   "dependencies": {
     "@google/generative-ai": "^0.24.1",

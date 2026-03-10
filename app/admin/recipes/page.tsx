@@ -115,6 +115,9 @@ export default function AdminRecipesPage() {
                       <Link href={`/recipe/${recipe.slug}`} target="_blank" className="text-blue-600 hover:text-blue-900">
                         View
                       </Link>
+                      <Link href={`/admin/recipes/edit/${recipe.slug}`} className="text-orange-600 hover:text-orange-900">
+                        Edit
+                      </Link>
                       <button 
                         onClick={() => handleDelete(recipe.slug)}
                         className="text-red-600 hover:text-red-900"

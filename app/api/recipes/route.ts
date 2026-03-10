@@ -6,6 +6,7 @@ import { rename, stat, mkdir } from 'fs/promises';
 import path from 'path';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
+import { put, del } from '@vercel/blob';
 
 async function getUser() {
   // 1. Try NextAuth session
@@ -104,8 +105,33 @@ export async function POST(request: Request) {
         }
         // Case 3: Image is in Vercel Blob (Cloud Storage)
         else if (body.imageUrl.startsWith('https://') && body.imageUrl.includes('public.blob.vercel-storage.com')) {
-            // Already in persistent cloud storage, no need to move or rename locally
-            console.log('Using cloud image URL directly:', body.imageUrl);
+            try {
+              const url = new URL(body.imageUrl);
+              const pathname = url.pathname;
+              const filename = pathname.split('/').pop();
+              const isTempUpload = pathname.includes('/temp-uploads/');
+
+              if (isTempUpload && filename) {
+                const dotIndex = filename.lastIndexOf('.');
+                const extension = dotIndex >= 0 ? filename.slice(dotIndex) : '.webp';
+                const response = await fetch(body.imageUrl);
+                if (!response.ok) {
+                  return NextResponse.json({ error: 'Failed to read uploaded image' }, { status: 400 });
+                }
+                const arrayBuffer = await response.arrayBuffer();
+                const contentType = response.headers.get('content-type') ?? 'image/webp';
+                const newFilename = `${body.slug}-${Date.now()}${extension}`;
+                const newBlob = await put(`recipes/${newFilename}`, Buffer.from(arrayBuffer), {
+                  access: 'public',
+                  contentType,
+                  addRandomSuffix: false,
+                });
+                await del(body.imageUrl).catch(() => {});
+                body.imageUrl = newBlob.url;
+              }
+            } catch (err) {
+              console.error('Failed to finalize cloud image:', err);
+            }
         }
     }
 

@@ -52,13 +52,28 @@ export default function NewRecipePage() {
   ];
 
   const deleteTempImage = async (url: string) => {
-    if (!url || !url.startsWith('/temp-uploads/')) return;
+    // Check for both local temp uploads AND Vercel Blob temp uploads
+    const isLocalTemp = url.startsWith('/temp-uploads/');
+    const isBlobTemp = url.startsWith('https://') && url.includes('public.blob.vercel-storage.com') && url.includes('temp-uploads');
+
+    if (!url || (!isLocalTemp && !isBlobTemp)) return;
+    
     try {
       // Use keepalive: true to ensure the request completes even if the page is navigating away
-      await fetch(`/api/upload?url=${encodeURIComponent(url)}`, {
+      // We must use fetch with keepalive or Navigator.sendBeacon
+      const deleteUrl = `/api/upload?url=${encodeURIComponent(url)}`;
+      
+      // Try fetch first
+      fetch(deleteUrl, {
         method: 'DELETE',
         keepalive: true
+      }).catch(err => {
+         console.error('Fetch cleanup failed, trying beacon', err);
+         // Fallback to beacon if fetch fails (though DELETE isn't supported by beacon usually, 
+         // but our API expects DELETE. We might need to adjust API to accept POST for cleanup if we want true beacon support.
+         // For now, keepalive: true is the modern standard.)
       });
+      
       console.log('Cleanup: Deleted unused temp image:', url);
     } catch (error) {
       console.error('Failed to delete temp image', error);

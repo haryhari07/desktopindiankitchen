@@ -878,14 +878,14 @@ const recipes = [
     // RAJASTHAN
     {
         id: 'rj1',
-        title: 'Dal Baati Churma',
-        slug: 'dal-baati-churma',
+        title: 'Authentic Dal Baati Churma: Why Your Baatis are Hard',
+        slug: 'authentic-dal-baati-churma-secret',
         state: 'Rajasthan',
         region: 'North India',
         prepTime: '45 mins',
         cookTime: '1 hour',
         servings: 4,
-        description: 'Hard wheat rolls served with lentils and sweetened crumbled wheat.',
+        description: 'The secret to soft, flaky Baatis revealed. This traditional Rajasthani trio is the ultimate royal feast!',
         ingredients: [
             {
                 item: 'Wheat Flour (Atta)',
@@ -2243,8 +2243,8 @@ const recipes = [
     // LADAKH
     {
         id: 'ld1',
-        title: 'Skyu',
-        slug: 'skyu',
+        title: 'Skyu: Traditional Ladakhi Pasta Stew',
+        slug: 'ladakhi-skyu-recipe',
         state: 'Ladakh',
         region: 'North India',
         prepTime: '30 mins',
@@ -3718,6 +3718,8 @@ return __turbopack_context__.a(async (__turbopack_handle_async_dependencies__, _
 __turbopack_context__.s([
     "DELETE",
     ()=>DELETE,
+    "GET",
+    ()=>GET,
     "PUT",
     ()=>PUT
 ]);
@@ -3755,6 +3757,27 @@ async function getUser() {
         }
     }
     return null;
+}
+async function GET(request, { params }) {
+    try {
+        const { slug } = await params;
+        const recipe = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].getRecipe(slug);
+        if (!recipe) {
+            return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+                error: 'Recipe not found'
+            }, {
+                status: 404
+            });
+        }
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json(recipe);
+    } catch (error) {
+        console.error('Get recipe error:', error);
+        return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({
+            error: 'Internal Server Error'
+        }, {
+            status: 500
+        });
+    }
 }
 async function DELETE(request, { params }) {
     try {
@@ -3830,6 +3853,45 @@ async function PUT(request, { params }) {
             });
         }
         const body = await request.json();
+        // Handle Image Update (Move from temp to recipes)
+        if (body.imageUrl && body.imageUrl.startsWith('/temp-uploads/')) {
+            const oldFilename = body.imageUrl.split('/').pop();
+            if (oldFilename) {
+                const oldPath = __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__["default"].join(process.cwd(), 'public', 'temp-uploads', oldFilename);
+                const extension = __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__["default"].extname(oldFilename);
+                // Use the slug for the filename to keep it consistent
+                const newFilename = `${slug}-${Date.now()}${extension}`;
+                const recipesDir = __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__["default"].join(process.cwd(), 'public', 'recipes');
+                const newPath = __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__["default"].join(recipesDir, newFilename);
+                try {
+                    // Ensure recipes directory exists
+                    await (0, __TURBOPACK__imported__module__$5b$externals$5d2f$fs$2f$promises__$5b$external$5d$__$28$fs$2f$promises$2c$__cjs$29$__["mkdir"])(recipesDir, {
+                        recursive: true
+                    });
+                    // Check if temp file exists
+                    await (0, __TURBOPACK__imported__module__$5b$externals$5d2f$fs$2f$promises__$5b$external$5d$__$28$fs$2f$promises$2c$__cjs$29$__["stat"])(oldPath);
+                    // Move and Rename
+                    await (0, __TURBOPACK__imported__module__$5b$externals$5d2f$fs$2f$promises__$5b$external$5d$__$28$fs$2f$promises$2c$__cjs$29$__["rename"])(oldPath, newPath);
+                    // Update body with new path
+                    body.imageUrl = `/recipes/${newFilename}`;
+                    console.log(`Moved new image from ${oldFilename} to ${newFilename}`);
+                    // Delete OLD image if it exists and is different
+                    const currentRecipe = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].getRecipe(slug);
+                    if (currentRecipe && currentRecipe.imageUrl && currentRecipe.imageUrl !== body.imageUrl) {
+                        if (currentRecipe.imageUrl.startsWith('/recipes/')) {
+                            const oldImageName = currentRecipe.imageUrl.split('/').pop();
+                            if (oldImageName) {
+                                const oldImagePath = __TURBOPACK__imported__module__$5b$externals$5d2f$path__$5b$external$5d$__$28$path$2c$__cjs$29$__["default"].join(recipesDir, oldImageName);
+                                await (0, __TURBOPACK__imported__module__$5b$externals$5d2f$fs$2f$promises__$5b$external$5d$__$28$fs$2f$promises$2c$__cjs$29$__["unlink"])(oldImagePath).catch((err)=>console.error('Failed to delete old image:', err));
+                                console.log('Deleted old image:', oldImageName);
+                            }
+                        }
+                    }
+                } catch (err) {
+                    console.error('Failed to move image from temp:', err);
+                }
+            }
+        }
         const updatedRecipe = await __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$db$2e$ts__$5b$app$2d$route$5d$__$28$ecmascript$29$__["db"].updateRecipe(slug, body);
         if (updatedRecipe) {
             return __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$server$2e$js__$5b$app$2d$route$5d$__$28$ecmascript$29$__["NextResponse"].json({

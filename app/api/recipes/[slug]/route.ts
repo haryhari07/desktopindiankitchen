@@ -2,10 +2,11 @@
 import { NextResponse } from 'next/server';
 import { db } from '@/lib/db';
 import { cookies } from 'next/headers';
-import { unlink } from 'fs/promises';
+import { unlink, rename, stat, mkdir } from 'fs/promises';
 import path from 'path';
 import { getServerSession } from 'next-auth';
 import { authOptions } from '@/lib/auth';
+import { put, del } from '@vercel/blob';
 
 async function getUser() {
   // 1. Try NextAuth session
@@ -28,6 +29,22 @@ async function getUser() {
 
 interface Props {
   params: Promise<{ slug: string }>;
+}
+
+export async function GET(request: Request, { params }: Props) {
+  try {
+    const { slug } = await params;
+    const recipe = await db.getRecipe(slug);
+
+    if (!recipe) {
+      return NextResponse.json({ error: 'Recipe not found' }, { status: 404 });
+    }
+
+    return NextResponse.json(recipe);
+  } catch (error) {
+    console.error('Get recipe error:', error);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
+  }
 }
 
 export async function DELETE(request: Request, { params }: Props) {
@@ -62,6 +79,9 @@ export async function DELETE(request: Request, { params }: Props) {
           }
         }
       }
+      if (imageUrl && imageUrl.startsWith('https://') && imageUrl.includes('public.blob.vercel-storage.com')) {
+        await del(imageUrl).catch((err) => console.error('Failed to delete image from blob:', err));
+      }
 
       return NextResponse.json({ success: true });
     } else {
@@ -88,6 +108,88 @@ export async function PUT(request: Request, { params }: Props) {
     }
 
     const body = await request.json();
+    const currentRecipe = await db.getRecipe(slug);
+
+    // Handle Image Update (Move from temp to recipes)
+    if (body.imageUrl && body.imageUrl.startsWith('/temp-uploads/')) {
+      const oldFilename = body.imageUrl.split('/').pop();
+      if (oldFilename) {
+        const oldPath = path.join(process.cwd(), 'public', 'temp-uploads', oldFilename);
+        const extension = path.extname(oldFilename);
+        // Use the slug for the filename to keep it consistent
+        const newFilename = `${slug}-${Date.now()}${extension}`; 
+        const recipesDir = path.join(process.cwd(), 'public', 'recipes');
+        const newPath = path.join(recipesDir, newFilename);
+
+        try {
+          // Ensure recipes directory exists
+          await mkdir(recipesDir, { recursive: true });
+          // Check if temp file exists
+          await stat(oldPath);
+          // Move and Rename
+          await rename(oldPath, newPath);
+          // Update body with new path
+          body.imageUrl = `/recipes/${newFilename}`;
+          console.log(`Moved new image from ${oldFilename} to ${newFilename}`);
+
+          // Delete OLD image if it exists and is different
+          if (currentRecipe && currentRecipe.imageUrl && currentRecipe.imageUrl !== body.imageUrl) {
+             if (currentRecipe.imageUrl.startsWith('/recipes/')) {
+                const oldImageName = currentRecipe.imageUrl.split('/').pop();
+                if (oldImageName) {
+                    const oldImagePath = path.join(recipesDir, oldImageName);
+                    await unlink(oldImagePath).catch(err => console.error('Failed to delete old image:', err));
+                    console.log('Deleted old image:', oldImageName);
+                }
+             }
+          }
+
+        } catch (err) {
+          console.error('Failed to move image from temp:', err);
+        }
+      }
+    }
+    if (
+      body.imageUrl &&
+      body.imageUrl.startsWith('https://') &&
+      body.imageUrl.includes('public.blob.vercel-storage.com') &&
+      body.imageUrl.includes('/temp-uploads/')
+    ) {
+      try {
+        const url = new URL(body.imageUrl);
+        const filename = url.pathname.split('/').pop();
+        if (filename) {
+          const dotIndex = filename.lastIndexOf('.');
+          const extension = dotIndex >= 0 ? filename.slice(dotIndex) : '.webp';
+          const response = await fetch(body.imageUrl);
+          if (!response.ok) {
+            return NextResponse.json({ error: 'Failed to read uploaded image' }, { status: 400 });
+          }
+          const arrayBuffer = await response.arrayBuffer();
+          const contentType = response.headers.get('content-type') ?? 'image/webp';
+          const newFilename = `${slug}-${Date.now()}${extension}`;
+          const newBlob = await put(`recipes/${newFilename}`, Buffer.from(arrayBuffer), {
+            access: 'public',
+            contentType,
+            addRandomSuffix: false,
+          });
+          await del(body.imageUrl).catch(() => {});
+          body.imageUrl = newBlob.url;
+
+          if (
+            currentRecipe?.imageUrl &&
+            currentRecipe.imageUrl !== body.imageUrl &&
+            currentRecipe.imageUrl.startsWith('https://') &&
+            currentRecipe.imageUrl.includes('public.blob.vercel-storage.com')
+          ) {
+            await del(currentRecipe.imageUrl).catch((err) => console.error('Failed to delete old blob image:', err));
+          }
+        }
+      } catch (err) {
+        console.error('Failed to finalize cloud image:', err);
+      }
+    }
+
     const updatedRecipe = await db.updateRecipe(slug, body);
 
     if (updatedRecipe) {
